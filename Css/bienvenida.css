@@ -118,14 +118,16 @@ width:80%;
 .Visible--info{
     transition:all 0.5s linear;
     opacity:100 ;
-    top: 10%;
+    top: 7%;
     -webkit-transition:all 0.5s linear;
     -moz-transition:all 0.5s linear;
     -ms-transition:all 0.5s linear;
     -o-transition:all 0.5s linear;
 }
 @media screen and (min-width:480px) {
-    
+    .Visible--info {
+        top: 10%;
+    }
 }
 
 @media screen and (min-width:760px) {
