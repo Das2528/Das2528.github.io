@@ -1,0 +1,91 @@
+form{
+display: block;
+width: 100vw;
+margin:0 0 20px 0;
+}
+
+.conten50{
+    margin:  auto;
+    width: 90vw;
+    padding: 0 20px;
+}
+
+/*azul: #165c92
+rosado: #e9008a
+verde #80b62c
+*/
+.formGroup{
+    width: 100%;
+    margin-top: 15px;
+}
+
+.formGroup label{
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.formGroup input,.formGroup textarea, .formGroup select{
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: #165c92 0.5px solid;
+    font-weight: 300;
+    background-color: white;
+}
+
+.formGroup input:focus, .formGroup textarea:focus,.formGroup select:focus {
+    border: 1px solid #165c92;
+-webkit-box-shadow: 0px 0px 11px 0px rgba(139, 200, 247, 1);
+    -moz-box-shadow: 0px 0px 11px 0px rgba(139, 200, 247, 1);
+    box-shadow: 0px 0px 11px 0px rgba(139, 200, 247, 1)
+}
+
+.btn--Guardar{
+    display: block;
+    width: 100%;
+    margin-top: 20px ;
+    background-color: #80b62c;
+    color: white;
+    padding: 15px 0;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+/*------------------Media query--------------------*/
+@media screen and (min-width:480px) {
+
+.conten50{
+    width: 80vw;
+}
+
+}
+
+@media screen and (min-width:760px) {
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+    .conten50 {
+        width: 40%;
+    }
+
+.formGroup input,
+.formGroup textarea,
+.formGroup select {
+    font-size: 1.3rem;
+}
+}

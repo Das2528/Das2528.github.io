@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #fafafa;
+    height: auto;
+
+}
+.header-section{
+
+margin-top: 5px;
+background-color: white;
+
+}
+
+.section-main{
+margin: 10px 0;
+padding:  10px 0;
+
+}
+.row {
+    display: block;
+    width: 100%;
+    
+}
+.container {
+    width: 100vw;
+    margin: auto;
+}
+
+.title--section {
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.2rem;
+    letter-spacing: 10px;
+    padding: 30px;
+
+}
+.title--section span{
+    letter-spacing: 2px;
+    font-size: 1rem;
+ 
+}
+.sub-title-section{
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 3px;
+}
+/*azul: #165c92
+rosado: #e9008a
+verde #80b62c
+*/
+.bgBlue {
+    background-color: #165c92;
+    transition: .5s background-color;
+    -webkit-transition: .5s background-color;
+    -moz-transition: .5s background-color;
+    -ms-transition: .5s background-color;
+    -o-transition: .5s background-color;
+}
+
+.bgRosa {
+    background-color: #e9008a;
+}
+
+.bgGreen {
+    background-color: #80b62c;
+}
+
+.bgBlanco {
+    background-color: #fff;
+}
+.bgGris{
+background-color: #161616;
+}
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+
+.preM-nav{
+    padding-left: 10px;
+    position: fixed;
+    z-index: 20000;
+    top: 50%;
+    right:-200px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+   background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #0f9b0f, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #0f9b0f, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    transition:.5s linear right ;
+}
+ input[type="checkbox"]{
+    display:none;
+}
+
+ input[type="checkbox"]:checked +.preM-nav {
+    right: 0;
+}
+input[type="checkbox"]:checked+.preM-nav>label {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+
+
+
+
+.preM-nav .icon{
+    display: block;
+    width:35px ;
+    height: 35px;
+    color:white;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: auto;
+    margin: auto;
+    font-weight: 300;
+    cursor: pointer;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transition: .3s linear transform;
+    -webkit-transition: .3s linear transform;
+    -moz-transition: .3s linear transform;
+    -ms-transition: .3s linear transform;
+    -o-transition: .3s linear transform;
+}
+
+.preM-nav .icon:hover {
+    background-color: hsl(0, 0%, 68%);
+}
+
+.preM-nav .btn-prematricula{
+    display: block;
+    width: 200px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+@media screen and (min-width:480px) {
+.section-main {
+        margin: 15px 0;
+        padding: 15px 0;
+
+    }
+}
+
+@media screen and (min-width:760px) {
+
+    .title--section {
+        font-size: 1.5rem
+    }
+        .title--section span {
+           
+            font-size: 1.3rem;
+    
+        }
+      
+    .sub-title-section {
+   
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+}
+
+.section-main {
+    margin: 20px 0;
+    padding: 20px 0;
+
+}
+}
+
+@media screen and (min-width:1024px) {
+
+    .preM-nav {
+
+        right: -180px;
+    }
+        .container{
+            width: 100vw;
+            max-width: 1200px;
+        }
+
+           .title--section {
+        font-size: 1.8rem
+    }
+          .title--section span {
+    
+              font-size: 1.5rem;
+    
+          }
+        .sub-title-section {
+    
+            font-size: 1.3rem;
+            letter-spacing: 6px;
+        }
+                .section-main {
+                    margin: 30px 0;
+                    padding: 30px 0;
+        
+                }
+}
+
+@media screen and (min-width:1600px) {}
